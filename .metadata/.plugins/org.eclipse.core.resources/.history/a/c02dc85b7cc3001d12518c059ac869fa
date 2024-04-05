@@ -1,0 +1,9 @@
+package com.springboot._springboot.demo;
+
+public class SpringComponent {
+public String getMessage()
+{
+	return "hello world";
+	
+}
+}

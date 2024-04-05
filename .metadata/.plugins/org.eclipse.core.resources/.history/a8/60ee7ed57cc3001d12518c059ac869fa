@@ -1,0 +1,19 @@
+package com.springboot._springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.springboot._springboot.demo.SpringComponent;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext ap= SpringApplication.run(Application.class, args);
+		System.out.println("spring boot hello wrold");
+	
+		SpringComponent c=ap.getBean(SpringComponent.class);
+	}
+
+}

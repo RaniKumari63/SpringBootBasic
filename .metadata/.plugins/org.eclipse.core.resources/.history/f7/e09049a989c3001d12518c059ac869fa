@@ -1,0 +1,10 @@
+package com.suchiit.first;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+@ResponseBody
+public class HelloWordController {
+
+	
+}

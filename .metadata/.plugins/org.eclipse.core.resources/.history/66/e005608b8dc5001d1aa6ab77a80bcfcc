@@ -1,0 +1,18 @@
+package com.suchiit;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.suchiit.repo.StudentRepo;
+
+@SpringBootApplication
+public class SpringBootFirstApp6Application {
+
+	public static void main(String[] args) {
+	ConfigurableApplicationContext context=	SpringApplication.run(SpringBootFirstApp6Application.class, args);
+	StudentRepo repo= context.getBean(StudentRepo.class);
+	
+	}
+
+}
